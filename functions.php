@@ -41,10 +41,11 @@ function coni_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	
 	if ( function_exists( 'add_image_size' ) ) {
 		//Blog
 		add_image_size( 'post', 953, 536, true );
-		add_image_size( 'blog_small', 457, 259, true );
+		add_image_size( 'blog-section', 457, 259, true );
 		add_image_size( 'post_square', 457, 457, true );
 
 		//Portfolio
@@ -55,6 +56,7 @@ function coni_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'coni' ),
+		'front-page' => esc_html__( 'Front Page Menu', 'coni' ),
 		'social' => esc_html__( 'Social Menu', 'coni' ),
 	) );
 
@@ -95,7 +97,7 @@ add_action( 'after_setup_theme', 'coni_setup' );
  * @global int $content_width
  */
 function coni_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'coni_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'coni_content_width', 953 );
 }
 add_action( 'after_setup_theme', 'coni_content_width', 0 );
 

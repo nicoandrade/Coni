@@ -54,9 +54,14 @@
                 <div class="col-md-7">
                 	<div class="collapse navbar-collapse" id="ql_nav_collapse">
                         <nav id="jqueryslidemenu" class="jqueryslidemenu navbar " role="navigation">
-                            <?php            
+                            <?php
+                            if ( is_front_page() ) {
+                                $menu_id = 'front-page';
+                            }else{
+                                $menu_id = 'primary';
+                            }
                             wp_nav_menu( array(                     
-                                'theme_location'  => 'primary',
+                                'theme_location'  => $menu_id,
                                 'menu_id' => 'primary-menu',
                                 'depth'             => 3,
                                 'menu_class'        => 'nav',

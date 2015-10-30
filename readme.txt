@@ -1,6 +1,6 @@
 === Coni ===
 
-Shophistic Lite is the perfect theme for your shop online. With a beautiful and unique design, is responsive and fully compatible with WooCommerce. The easiest way to create your store online. If you need more features you should check the PRO version, Shophistic: https://www.quemalabs.com/theme/shophistic/
+Coni is a multipurpose theme, focus on corporate and business. With responsive and minimalist design. Includes an awesome One Page design for the front page, with unique section to present your content, like Services, Features, Team members, Videos, Images, Testimonials, Pricing tables, Clients, Blog posts and much more. If you need more features you should check the PRO version, Coni Pro: https://www.quemalabs.com/theme/coni-pro/
 
 Author: Quema Labs
 Tags: light, white, gray, right-sidebar, two-columns, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, photoblogging

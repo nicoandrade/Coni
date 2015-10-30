@@ -1,12 +1,19 @@
 <div id="blog-section" class="blog-section">
     <h3 class="section-title wow fadeIn"><?php echo esc_html( get_theme_mod( 'coni_blog_title', __( 'From The Blog', 'coni' ) ) ); ?></h3>
 
-	<?php if ( have_posts() ) : ?>
+    	<?php
+        $args = array(
+            'post_type' => 'post',
+        );
+        
+        $the_query = new WP_Query( $args );
+        if ( $the_query->have_posts() ) :
+    	?>
 
 		<div class="blog-wrap js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": false, "prevNextButtons": false, "pageDots": true }'>
 
 		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			
 			<article id="post-<?php the_ID(); ?>" <?php post_class('blog-item wow fadeIn'); ?>>
                 <time class="blog-time-date" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( get_the_date() ) ?></time>
@@ -14,7 +21,7 @@
                 <?php if ( has_post_thumbnail() ) { ?>
 				<div class="blog-item-image">
 					<a href="<?php echo esc_url( get_permalink() ) ?>" class="ql_thumbnail_hover" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-						<?php the_post_thumbnail( 'blog_small' ); ?>
+						<?php the_post_thumbnail( 'blog-section' ); ?>
 					</a>
 				</div><!-- /post_image -->
 				<?php } ?>

@@ -23,8 +23,9 @@
 		$image_text = wp_kses( get_theme_mod( 'coni_image_text', 'Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.' ), $wp_kses_args );
         ?>
         <p class="wow fadeInUp" data-wow-delay="300ms"><?php echo nl2br( $image_text ); ?></p>
-        <?php if ( !empty( get_theme_mod( 'coni_image_link_title', esc_html__( 'Learn More', 'coni' ) ) ) || is_customize_preview() ) { ?>
-        <a href="<?php echo esc_url( get_theme_mod( 'coni_image_link_url', '#' ) ); ?>" class="btn-ql alternative-white wow fadeInUp" data-wow-delay="700ms"><?php echo esc_html( get_theme_mod( 'coni_image_link_title', esc_html__( 'Learn More', 'coni' ) ) ); ?></a>
+        <?php $coni_image_link_title = get_theme_mod( 'coni_image_link_title', esc_html__( 'Learn More', 'coni' ) ); ?>
+        <?php if ( !empty( $coni_image_link_title ) || is_customize_preview() ) { ?>
+        <a href="<?php echo esc_url( get_theme_mod( 'coni_image_link_url', '#' ) ); ?>" class="btn-ql alternative-white wow fadeInUp" data-wow-delay="700ms"><?php echo esc_html( $coni_image_link_title ); ?></a>
         <?php } ?>
     </div>
 

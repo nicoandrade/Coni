@@ -22,8 +22,9 @@
     <div class="laptop-wrap wow fadeIn" data-wow-delay="500ms">
     	<?php
     	$screen_image = get_template_directory_uri() . '/images/screen.jpg';
-		if ( !empty( get_theme_mod( 'coni_quote_image' ) ) ) {
-			$screen_image = wp_get_attachment_image_src( absint( get_theme_mod( 'coni_quote_image' ) ), 'full' );
+        $coni_quote_image = get_theme_mod( 'coni_quote_image' );
+		if ( !empty( $coni_quote_image ) ) {
+			$screen_image = wp_get_attachment_image_src( absint( $coni_quote_image ), 'full' );
 			$screen_image = $screen_image[0];
 		}
     	?>

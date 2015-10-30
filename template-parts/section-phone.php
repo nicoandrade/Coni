@@ -5,8 +5,9 @@ $bck_color = get_theme_mod( 'coni_phone_bck_color', '#68beec' );
     <div class="phone-wrap hidden-sm hidden-xs wow fadeInLeft">
     	<?php
     	$screen_image = get_template_directory_uri() . '/images/phone-screen.jpg';
-		if ( !empty( get_theme_mod( 'coni_phone_image' ) ) ) {
-			$screen_image = wp_get_attachment_image_src( absint( get_theme_mod( 'coni_phone_image' ) ), 'full' );
+    	$coni_phone_image = get_theme_mod( 'coni_phone_image' );
+		if ( !empty( $coni_phone_image ) ) {
+			$screen_image = wp_get_attachment_image_src( absint( $coni_phone_image ), 'full' );
 			$screen_image = $screen_image[0];
 		}
     	?>
@@ -54,8 +55,9 @@ $bck_color = get_theme_mod( 'coni_phone_bck_color', '#68beec' );
        
         <div class="clearfix"></div>
 		
-		<?php if ( !empty( get_theme_mod( 'coni_phone_link_title', esc_html__( 'Learn More', 'coni' ) ) ) || is_customize_preview() ) { ?>
-        <a href="<?php echo esc_url( get_theme_mod( 'coni_phone_link_url', '#' ) ); ?>" class="btn-ql alternative-white wow fadeIn" data-wow-delay="1400ms"><?php echo esc_html( get_theme_mod( 'coni_phone_link_title', esc_html__( 'Learn More', 'coni' ) ) ); ?></a>
+		<?php $coni_phone_link_title = get_theme_mod( 'coni_phone_link_title', esc_html__( 'Learn More', 'coni' ) ); ?>
+		<?php if ( !empty( $coni_phone_link_title ) || is_customize_preview() ) { ?>
+        <a href="<?php echo esc_url( get_theme_mod( 'coni_phone_link_url', '#' ) ); ?>" class="btn-ql alternative-white wow fadeIn" data-wow-delay="1400ms"><?php echo esc_html( $coni_phone_link_title ); ?></a>
         <?php } ?>
 
     </div>
