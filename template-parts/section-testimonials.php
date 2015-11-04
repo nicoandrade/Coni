@@ -5,7 +5,11 @@ if ( empty( $testimonial_image ) ) {
 	$testimonial_image = get_template_directory_uri() . '/images/img.jpg';
 }
 ?>
-<div id="testimonials-section" class="testimonials-section" style="background-image: url(<?php echo $testimonial_image; ?>);">
+<?php
+$coni_enable_section = get_theme_mod( 'coni_testimonial_enable', true );
+if ( $coni_enable_section || is_customize_preview() ) :
+?>
+<div id="testimonials-section" class="testimonials-section" style="background-image: url(<?php echo $testimonial_image; ?>);" <?php if( false == $coni_enable_section ): echo 'style="display: none;"'; endif ?>>
     <div class="testimonials-wrap js-flickity wow fadeIn" data-flickity-options='{ "cellAlign": "center", "contain": true, "prevNextButtons": false, "pageDots": true, "autoPlay": 5000 }'>
     	<?php
         $args = array(
@@ -45,3 +49,4 @@ if ( empty( $testimonial_image ) ) {
     </div><!-- testimonials-wrap -->
 
 </div><!-- testimonials-section -->
+<?php endif ?>

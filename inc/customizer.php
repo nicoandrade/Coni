@@ -111,6 +111,13 @@ function coni_customize_register( $wp_customize ) {
 		        'settings' => 'coni_welcome_image',
 		    ) ) );
 
+		$wp_customize->add_setting( 'coni_welcome_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_welcome_enable', array(
+			'section' => 'coni_welcome_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
+		) );
+
     	/*
     	Services
     	------------------------------ */
@@ -127,6 +134,13 @@ function coni_customize_register( $wp_customize ) {
 			'label' => __( 'To add services go to: <br><a href="#" data-section="sidebar-widgets-services-section">Customize -> Widgets -> Front Page - Service Section</a>. <br>Then add the "<strong>Coni - Service widget</strong>"', 'coni' ),
 		) ) );
 
+		$wp_customize->add_setting( 'coni_services_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_services_enable', array(
+			'section' => 'coni_services_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
+		) );
+
     	/*
     	Quote
     	------------------------------ */
@@ -137,7 +151,7 @@ function coni_customize_register( $wp_customize ) {
 			'priority' => 120,
 		) );
 
-		$wp_customize->add_setting( 'coni_quote', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_textarea', ) );
+		$wp_customize->add_setting( 'coni_quote', array( 'default' => esc_html__( '"We are an agency passionate about what we do, providing a great service to small businesses. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_textarea', ) );
 		$wp_customize->add_control( 'coni_quote', array(
 			'type' => 'textarea',
 			'section' => 'coni_quote_section', // Required, core or custom.
@@ -145,7 +159,7 @@ function coni_customize_register( $wp_customize ) {
 			//'description' => esc_attr__( '', 'coni' ),
 		) );
 
-		$wp_customize->add_setting( 'coni_quote_cite', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text_html', ) );
+		$wp_customize->add_setting( 'coni_quote_cite', array( 'default' => __( 'John Smith <span>CEO, Coni Inc.</span>', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text_html', ) );
 		$wp_customize->add_control( 'coni_quote_cite', array(
 			'type' => 'text',
 			'section' => 'coni_quote_section', // Required, core or custom.
@@ -170,6 +184,13 @@ function coni_customize_register( $wp_customize ) {
 			'section'    => 'coni_quote_section',
 		) ) );
 
+		$wp_customize->add_setting( 'coni_quote_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_quote_enable', array(
+			'section' => 'coni_quote_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
+		) );
+
 		/*
     	Video
     	------------------------------ */
@@ -180,7 +201,7 @@ function coni_customize_register( $wp_customize ) {
 			'priority' => 140,
 		) );
 
-		$wp_customize->add_setting( 'coni_video_url', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_url', ) );
+		$wp_customize->add_setting( 'coni_video_url', array( 'default' => 'https://vimeo.com/137643804', 'sanitize_callback' => 'coni_sanitize_url', ) );
 		$wp_customize->add_control( 'coni_video_url', array(
 			'type' => 'url',
 			'section' => 'coni_video_section', // Required, core or custom.
@@ -188,21 +209,23 @@ function coni_customize_register( $wp_customize ) {
 			'description' => esc_attr__( "Must be a YouTube or Vimeo URL", 'coni' ),
 		) );
 
-		$wp_customize->add_setting( 'coni_video_title', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
+		/* translators: Lorem ipsum text, It is not strictly necessary to translate. */
+		$wp_customize->add_setting( 'coni_video_title', array( 'default' => esc_html__( 'Praesent commodo cursus magna, vel scelerisque nisl consectetur et', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
 		$wp_customize->add_control( 'coni_video_title', array(
 			'type' => 'text',
 			'section' => 'coni_video_section', // Required, core or custom.
 			'label' => esc_attr__( "Title", 'coni' ),
 		) );
 
-		$wp_customize->add_setting( 'coni_video_text', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text_html', ) );
+		/* translators: Lorem ipsum text, It is not strictly necessary to translate. */
+		$wp_customize->add_setting( 'coni_video_text', array( 'default' => esc_html__( 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna.', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text_html', ) );
 		$wp_customize->add_control( 'coni_video_text', array(
 			'type' => 'textarea',
 			'section' => 'coni_video_section', // Required, core or custom.
 			'label' => esc_attr__( 'Text', 'coni' ),
 		) );
 
-		$wp_customize->add_setting( 'coni_video_link_title', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
+		$wp_customize->add_setting( 'coni_video_link_title', array( 'default' => esc_html__( 'Learn More', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
 		$wp_customize->add_control( 'coni_video_link_title', array(
 			'type' => 'text',
 			'section' => 'coni_video_section', // Required, core or custom.
@@ -214,6 +237,13 @@ function coni_customize_register( $wp_customize ) {
 			'type' => 'url',
 			'section' => 'coni_video_section', // Required, core or custom.
 			'label' => esc_attr__( "Link URL", 'coni' ),
+		) );
+
+		$wp_customize->add_setting( 'coni_video_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_video_enable', array(
+			'section' => 'coni_video_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
 		) );
 
 		/*
@@ -235,6 +265,13 @@ function coni_customize_register( $wp_customize ) {
 		        'settings' => 'coni_testimonial_image',
 		    ) ) );
 
+		    $wp_customize->add_setting( 'coni_testimonial_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+		    $wp_customize->add_control( 'coni_testimonial_enable', array(
+				'section' => 'coni_testimonials_section', // Required, core or custom.
+				'label' => esc_attr__( "Use this section?", 'coni' ),
+				'type'    => 'checkbox',
+			) );
+
 		}
 
 		/*
@@ -254,21 +291,23 @@ function coni_customize_register( $wp_customize ) {
 	        'settings' => 'coni_image_image',
 	    ) ) );
 
-		$wp_customize->add_setting( 'coni_image_title', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
+	    /* translators: Lorem ipsum text, It is not strictly necessary to translate. */
+		$wp_customize->add_setting( 'coni_image_title', array( 'default' => esc_html__( 'Donec id elit non mi porta gravida at eget metus', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
 		$wp_customize->add_control( 'coni_image_title', array(
 			'type' => 'text',
 			'section' => 'coni_image_section', // Required, core or custom.
 			'label' => esc_attr__( "Title", 'coni' ),
 		) );
 
-		$wp_customize->add_setting( 'coni_image_text', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text_html', ) );
+		/* translators: Lorem ipsum text, It is not strictly necessary to translate. */
+		$wp_customize->add_setting( 'coni_image_text', array( 'default' => esc_html__( 'Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text_html', ) );
 		$wp_customize->add_control( 'coni_image_text', array(
 			'type' => 'textarea',
 			'section' => 'coni_image_section', // Required, core or custom.
 			'label' => esc_attr__( 'Text', 'coni' ),
 		) );
 
-		$wp_customize->add_setting( 'coni_image_link_title', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
+		$wp_customize->add_setting( 'coni_image_link_title', array( 'default' => esc_html__( 'Learn More', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
 		$wp_customize->add_control( 'coni_image_link_title', array(
 			'type' => 'text',
 			'section' => 'coni_image_section', // Required, core or custom.
@@ -280,6 +319,13 @@ function coni_customize_register( $wp_customize ) {
 			'type' => 'url',
 			'section' => 'coni_image_section', // Required, core or custom.
 			'label' => esc_attr__( "Link URL", 'coni' ),
+		) );
+
+		$wp_customize->add_setting( 'coni_image_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_image_enable', array(
+			'section' => 'coni_image_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
 		) );
 
 		/*
@@ -297,6 +343,7 @@ function coni_customize_register( $wp_customize ) {
 			'section' => 'coni_team_section', // Required, core or custom.
 			'label' => sprintf( __( 'Check out the <a href="%s" target="_blank">PRO version</a> to include team members.', 'coni' ), 'https://www.quemalabs.com/theme/coni-pro/' ),
 		) ) );
+
 
 		/*
     	Phone
@@ -347,7 +394,6 @@ function coni_customize_register( $wp_customize ) {
 
 	    $wp_customize->add_setting( 'coni_phone_color', array( 'default' => 'black', 'transport' => 'postMessage', 'sanitize_callback' => 'sanitize_key', ) );
 	    $wp_customize->add_control( 'coni_phone_color', array(
-			'type' => 'url',
 			'section' => 'coni_phone_section', // Required, core or custom.
 			'label' => esc_attr__( "Phone Color", 'coni' ),
 			'type'    => 'select',
@@ -356,6 +402,13 @@ function coni_customize_register( $wp_customize ) {
 	            'gray' => 'Gray',
 	            'gold' => 'Gold',
 	        ),
+		) );
+
+		$wp_customize->add_setting( 'coni_phone_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_phone_enable', array(
+			'section' => 'coni_phone_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
 		) );
 
 		/*
@@ -368,14 +421,14 @@ function coni_customize_register( $wp_customize ) {
 			'priority' => 240,
 		) );
 
-		$wp_customize->add_setting( 'coni_tagline_text', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
+		$wp_customize->add_setting( 'coni_tagline_text', array( 'default' => esc_html__( 'Start captivating the attention of your client', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
 		$wp_customize->add_control( 'coni_tagline_text', array(
 			'type' => 'text',
 			'section' => 'coni_tagline_section', // Required, core or custom.
 			'label' => esc_attr__( "Tagline", 'coni' ),
 		) );
 
-		$wp_customize->add_setting( 'coni_tagline_sub_text', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
+		$wp_customize->add_setting( 'coni_tagline_sub_text', array( 'default' => esc_html__( 'Cras justo odio, dapibus ac facilisis in, egestas eget quam', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
 		$wp_customize->add_control( 'coni_tagline_sub_text', array(
 			'type' => 'text',
 			'section' => 'coni_tagline_section', // Required, core or custom.
@@ -395,6 +448,13 @@ function coni_customize_register( $wp_customize ) {
 			'section'    => 'coni_tagline_section',
 		) ) );
 
+		$wp_customize->add_setting( 'coni_tagline_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_tagline_enable', array(
+			'section' => 'coni_tagline_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
+		) );
+
 		/*
     	Clients
     	------------------------------ */
@@ -405,7 +465,7 @@ function coni_customize_register( $wp_customize ) {
 			'priority' => 260,
 		) );
 
-		$wp_customize->add_setting( 'coni_clients_title', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
+		$wp_customize->add_setting( 'coni_clients_title', array( 'default' => esc_html__( 'People Who Trust Us', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
 		$wp_customize->add_control( 'coni_clients_title', array(
 			'type' => 'text',
 			'section' => 'coni_clients_section', // Required, core or custom.
@@ -417,6 +477,13 @@ function coni_customize_register( $wp_customize ) {
 			'section' => 'coni_clients_section', // Required, core or custom.
 			'label' => __( 'To add services go to: <br><a href="#" data-section="sidebar-widgets-clients-section">Customize -> Widgets -> Front Page - Clients Section</a>. <br>Then add the "<strong>Coni - Client widget</strong>"', 'coni' ),
 		) ) );
+
+		$wp_customize->add_setting( 'coni_clients_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_clients_enable', array(
+			'section' => 'coni_clients_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
+		) );
 
 		/*
     	Map
@@ -433,6 +500,7 @@ function coni_customize_register( $wp_customize ) {
 			'section' => 'coni_map_section', // Required, core or custom.
 			'label' => sprintf( __( 'Check out the <a href="%s" target="_blank">PRO version</a> to create a map and contact info.', 'coni' ), 'https://www.quemalabs.com/theme/coni-pro/' ),
 		) ) );
+
 
 		/*
     	Pricing
@@ -457,6 +525,13 @@ function coni_customize_register( $wp_customize ) {
 			'label' => __( 'To add a list go to: <br><a href="#" data-section="sidebar-widgets-pricing-section">Customize -> Widgets -> Front Page - Pricing Section</a>. <br>Then add the "<strong>Coni - Pricing widget</strong>"', 'coni' ),
 		) ) );
 
+		$wp_customize->add_setting( 'coni_pricing_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_pricing_enable', array(
+			'section' => 'coni_pricing_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
+		) );
+
 		/*
     	Portfolio
     	------------------------------ */
@@ -472,6 +547,32 @@ function coni_customize_register( $wp_customize ) {
 			'section' => 'coni_portfolio_section', // Required, core or custom.
 			'label' => sprintf( __( 'Check out the <a href="%s" target="_blank">PRO version</a> to create a portfolio.', 'coni' ), 'https://www.quemalabs.com/theme/coni-pro/' ),
 		) ) );
+
+
+		/*
+    	Blog
+    	------------------------------ */
+		$wp_customize->add_section( 'coni_blog_section', array(
+			'title' => esc_attr__( 'Blog', 'coni' ),
+			'description' => esc_attr__( "Display blog posts.", 'coni' ),
+			'panel' => 'coni_front_page_sections',
+			'priority' => 340,
+		) );
+
+		$wp_customize->add_setting( 'coni_blog_title', array( 'default' => esc_html__( 'From the blog', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
+		$wp_customize->add_control( 'coni_blog_title', array(
+			'type' => 'text',
+			'section' => 'coni_blog_section', // Required, core or custom.
+			'label' => esc_attr__( "Section Title", 'coni' ),
+		) );
+
+		$wp_customize->add_setting( 'coni_blog_enable', array( 'default' => true, 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_bool', ) );
+	    $wp_customize->add_control( 'coni_blog_enable', array(
+			'section' => 'coni_blog_section', // Required, core or custom.
+			'label' => esc_attr__( "Use this section?", 'coni' ),
+			'type'    => 'checkbox',
+		) );
+
 
 		
 
@@ -590,6 +691,13 @@ function coni_sanitize_textarea( $text ) {
  */
 function coni_sanitize_url( $url ) {
 	return esc_url( $url );
+}
+
+/**
+ * Sanitize Boolean
+ */
+function coni_sanitize_bool( $string ) {
+	return (bool)$string;
 } 
 
 /**

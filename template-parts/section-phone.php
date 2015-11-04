@@ -1,7 +1,11 @@
 <?php
 $bck_color = get_theme_mod( 'coni_phone_bck_color', '#68beec' );
 ?>
-<div id="phone-section" class="phone-section" style="background-color: <?php echo esc_attr( $bck_color ); ?>;">
+<?php
+$coni_enable_section = get_theme_mod( 'coni_phone_enable', true );
+if ( $coni_enable_section || is_customize_preview() ) :
+?>
+<div id="phone-section" class="phone-section" style="background-color: <?php echo esc_attr( $bck_color ); ?>;" <?php if( false == $coni_enable_section ): echo 'style="display: none;"'; endif ?>>
     <div class="phone-wrap hidden-sm hidden-xs wow fadeInLeft">
     	<?php
     	$screen_image = get_template_directory_uri() . '/images/phone-screen.jpg';
@@ -64,3 +68,4 @@ $bck_color = get_theme_mod( 'coni_phone_bck_color', '#68beec' );
     
     
 </div><!-- phone-section -->
+<?php endif ?>

@@ -1,4 +1,8 @@
-<div id="welcome-section" class="welcome-section">
+<?php
+$coni_enable_section = get_theme_mod( 'coni_welcome_enable', true );
+if ( $coni_enable_section || is_customize_preview() ) :
+?>
+<div id="welcome-section" class="welcome-section" <?php if( false == $coni_enable_section ): echo 'style="display: none;"'; endif ?>>
     <?php
     $welcome_image = wp_get_attachment_image_src( absint( get_theme_mod( 'coni_welcome_image' ) ), 'full' );
     $welcome_image = $welcome_image[0];
@@ -16,3 +20,4 @@
     </div><!-- welcome-intro -->
         
 </div><!-- welcome-section -->
+<?php endif ?>

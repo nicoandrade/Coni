@@ -1,4 +1,8 @@
-<div id="blog-section" class="blog-section">
+<?php
+$coni_enable_section = get_theme_mod( 'coni_blog_enable', true );
+if ( $coni_enable_section || is_customize_preview() ) :
+?>
+<div id="blog-section" class="blog-section" <?php if( false == $coni_enable_section ): echo 'style="display: none;"'; endif ?>>
     <h3 class="section-title wow fadeIn"><?php echo esc_html( get_theme_mod( 'coni_blog_title', __( 'From The Blog', 'coni' ) ) ); ?></h3>
 
     	<?php
@@ -41,3 +45,4 @@
 
 
 </div><!-- blog-section -->
+<?php endif ?>

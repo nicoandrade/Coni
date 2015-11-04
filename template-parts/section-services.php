@@ -1,4 +1,8 @@
-<div id="services-section"class="services-section">
+<?php
+$coni_enable_section = get_theme_mod( 'coni_services_enable', true );
+if ( $coni_enable_section || is_customize_preview() ) :
+?>
+<div id="services-section"class="services-section"  <?php if( false == $coni_enable_section ): echo 'style="display: none;"'; endif ?>>
     <div class="container">
         <div class="row">
 
@@ -45,3 +49,4 @@
     </div><!-- container -->
     
 </div><!-- services-section -->
+<?php endif ?>

@@ -1,4 +1,8 @@
-<div id="clients-section" class="clients-section">
+<?php
+$coni_enable_section = get_theme_mod( 'coni_clients_enable', true );
+if ( $coni_enable_section || is_customize_preview() ) :
+?>
+<div id="clients-section" class="clients-section" <?php if( false == $coni_enable_section ): echo 'style="display: none;"'; endif ?>>
     <h2 class="section-title wow fadeIn"><?php echo esc_html( get_theme_mod( 'coni_clients_title', __( 'People Who Trust Us', 'coni' ) ) ); ?></h2>
 
     <div class="clients-wrap js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": false, "prevNextButtons": false, "pageDots": true, "autoPlay": 5000, "watchCSS": true }'>
@@ -44,3 +48,4 @@
     </div><!-- clients-wrap -->
 
 </div><!-- clients-section -->
+<?php endif ?>

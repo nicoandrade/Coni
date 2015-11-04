@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Coni\n"
-"POT-Creation-Date: 2015-10-30 16:22-0300\n"
-"PO-Revision-Date: 2015-10-30 16:22-0300\n"
+"POT-Creation-Date: 2015-10-31 10:56-0300\n"
+"PO-Revision-Date: 2015-10-31 10:54-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -104,15 +104,15 @@ msgstr ""
 msgid "Quema Labs"
 msgstr ""
 
-#: functions.php:57
+#: functions.php:58
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:58
+#: functions.php:59
 msgid "Front Page Menu"
 msgstr ""
 
-#: functions.php:59
+#: functions.php:60
 msgid "Social Menu"
 msgstr ""
 
@@ -146,8 +146,8 @@ msgstr ""
 msgid "Display a big image and welcome message."
 msgstr ""
 
-#: inc/customizer.php:86 template-parts/section-welcome.php:9
-#: template-parts/section-welcome.php:11
+#: inc/customizer.php:86 template-parts/section-welcome.php:13
+#: template-parts/section-welcome.php:15
 msgid "Be the one to stand out in the crowd"
 msgstr ""
 
@@ -155,21 +155,19 @@ msgstr ""
 msgid "Welcome Message"
 msgstr ""
 
-#: inc/customizer.php:93 template-parts/section-image.php:26
-#: template-parts/section-image.php:27 template-parts/section-phone.php:57
-#: template-parts/section-phone.php:58 template-parts/section-video.php:34
-#: template-parts/section-video.php:35 template-parts/section-welcome.php:12
-#: template-parts/section-welcome.php:13
+#: inc/customizer.php:93 inc/customizer.php:228 inc/customizer.php:310
+#: template-parts/section-image.php:32 template-parts/section-phone.php:62
+#: template-parts/section-video.php:40 template-parts/section-welcome.php:16
 msgid "Learn More"
 msgstr ""
 
-#: inc/customizer.php:97 inc/customizer.php:209 inc/customizer.php:275
-#: inc/customizer.php:332 inc/widgets/service.php:188
+#: inc/customizer.php:97 inc/customizer.php:232 inc/customizer.php:314
+#: inc/customizer.php:379 inc/widgets/service.php:188
 msgid "Link Title"
 msgstr ""
 
-#: inc/customizer.php:104 inc/customizer.php:216 inc/customizer.php:282
-#: inc/customizer.php:339 inc/widgets/pricing.php:183
+#: inc/customizer.php:104 inc/customizer.php:239 inc/customizer.php:321
+#: inc/customizer.php:386 inc/widgets/pricing.php:183
 msgid "Link URL"
 msgstr ""
 
@@ -177,222 +175,290 @@ msgstr ""
 msgid "Welcome Image"
 msgstr ""
 
-#: inc/customizer.php:118
+#: inc/customizer.php:117 inc/customizer.php:140 inc/customizer.php:190
+#: inc/customizer.php:245 inc/customizer.php:271 inc/customizer.php:327
+#: inc/customizer.php:410 inc/customizer.php:454 inc/customizer.php:484
+#: inc/customizer.php:531 inc/customizer.php:572
+msgid "Use this section?"
+msgstr ""
+
+#: inc/customizer.php:125
 msgid "Services"
 msgstr ""
 
-#: inc/customizer.php:119
+#: inc/customizer.php:126
 msgid "Display services with icons."
 msgstr ""
 
-#: inc/customizer.php:127
+#: inc/customizer.php:134
 msgid ""
 "To add services go to: <br><a href=\"#\" data-section=\"sidebar-widgets-"
 "services-section\">Customize -> Widgets -> Front Page - Service Section</a>. "
 "<br>Then add the \"<strong>Coni - Service widget</strong>\""
 msgstr ""
 
-#: inc/customizer.php:134 inc/customizer.php:144
+#: inc/customizer.php:148 inc/customizer.php:158
 msgid "Quote"
 msgstr ""
 
-#: inc/customizer.php:135
+#: inc/customizer.php:149
 msgid "Display a quote and an image inside a laptop."
 msgstr ""
 
-#: inc/customizer.php:152
+#: inc/customizer.php:154 template-parts/section-testimonials.php:36
+msgid ""
+"\"We are an agency passionate about what we do, providing a great service to "
+"small businesses. Fusce dapibus, tellus ac cursus commodo, tortor mauris "
+"condimentum nibh, ut fermentum massa justo sit amet risus.\""
+msgstr ""
+
+#: inc/customizer.php:162 template-parts/section-quote.php:21
+#: template-parts/section-testimonials.php:41
+msgid "John Smith <span>CEO, Coni Inc.</span>"
+msgstr ""
+
+#: inc/customizer.php:166
 msgid "Quote's Author"
 msgstr ""
 
-#: inc/customizer.php:159 inc/customizer.php:244 inc/widgets/client.php:100
+#: inc/customizer.php:173 inc/customizer.php:281 inc/widgets/client.php:100
 #: inc/widgets/service.php:137
 msgid "Image"
 msgstr ""
 
-#: inc/customizer.php:160
+#: inc/customizer.php:174
 msgid "Screenshot to be displayed within the laptop."
 msgstr ""
 
-#: inc/customizer.php:169 inc/customizer.php:344 inc/customizer.php:394
+#: inc/customizer.php:183 inc/customizer.php:391 inc/customizer.php:447
 msgid "Background Color"
 msgstr ""
 
-#: inc/customizer.php:177
+#: inc/customizer.php:198
 msgid "Video"
 msgstr ""
 
-#: inc/customizer.php:178
+#: inc/customizer.php:199
 msgid "Display a video from YouTube or Vimeo and text aside."
 msgstr ""
 
-#: inc/customizer.php:187
+#: inc/customizer.php:208
 msgid "Video URL"
 msgstr ""
 
-#: inc/customizer.php:188
+#: inc/customizer.php:209
 msgid "Must be a YouTube or Vimeo URL"
 msgstr ""
 
-#: inc/customizer.php:195 inc/customizer.php:261 inc/widgets/client.php:123
+#: inc/customizer.php:213 template-parts/section-video.php:24
+msgid "Praesent commodo cursus magna, vel scelerisque nisl consectetur et"
+msgstr ""
+
+#: inc/customizer.php:217 inc/customizer.php:299 inc/widgets/client.php:123
 #: inc/widgets/pricing.php:129 inc/widgets/service.php:167
 msgid "Title"
 msgstr ""
 
-#: inc/customizer.php:202 inc/customizer.php:268 inc/widgets/service.php:177
+#: inc/customizer.php:221 template-parts/section-video.php:37
+msgid ""
+"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis "
+"risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac "
+"facilisis in, egestas eget quam. Praesent commodo cursus magna."
+msgstr ""
+
+#: inc/customizer.php:225 inc/customizer.php:307 inc/widgets/service.php:177
 msgid "Text"
 msgstr ""
 
-#: inc/customizer.php:225
+#: inc/customizer.php:255
 msgid "Testimonials"
 msgstr ""
 
-#: inc/customizer.php:226
+#: inc/customizer.php:256
 #, php-format
 msgid ""
 "To create a testimonial go to your <a href=\"%s\">Admin Panel >> "
 "Testimonials >> Add New</a>."
 msgstr ""
 
-#: inc/customizer.php:233
+#: inc/customizer.php:263
 msgid "Background Image"
 msgstr ""
 
-#: inc/customizer.php:245
+#: inc/customizer.php:282
 msgid "Display an image and text aside."
 msgstr ""
 
-#: inc/customizer.php:252
+#: inc/customizer.php:289
 msgid "Featured Image"
 msgstr ""
 
-#: inc/customizer.php:289
+#: inc/customizer.php:295 template-parts/section-image.php:16
+msgid "Donec id elit non mi porta gravida at eget metus"
+msgstr ""
+
+#: inc/customizer.php:303 template-parts/section-image.php:29
+msgid ""
+"Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor "
+"ligula, eget lacinia odio sem nec elit. Duis mollis, est non commodo luctus, "
+"nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit "
+"libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis "
+"parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna "
+"mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr ""
+
+#: inc/customizer.php:335
 msgid "Team"
 msgstr ""
 
-#: inc/customizer.php:290
+#: inc/customizer.php:336
 msgid "Display your team members."
 msgstr ""
 
-#: inc/customizer.php:298
+#: inc/customizer.php:344
 #, php-format
 msgid ""
 "Check out the <a href=\"%s\" target=\"_blank\">PRO version</a> to include "
 "team members."
 msgstr ""
 
-#: inc/customizer.php:305
+#: inc/customizer.php:352
 msgid "Phone"
 msgstr ""
 
-#: inc/customizer.php:306
+#: inc/customizer.php:353
 msgid "Display a phone screenshot and services."
 msgstr ""
 
-#: inc/customizer.php:314
+#: inc/customizer.php:361
 msgid "Phone Screen"
 msgstr ""
 
-#: inc/customizer.php:315
+#: inc/customizer.php:362
 msgid "Screenshot to be displayed within the phone."
 msgstr ""
 
-#: inc/customizer.php:325
+#: inc/customizer.php:372
 msgid ""
 "To add services go to: <br><a href=\"#\" data-section=\"sidebar-widgets-"
 "phone-section\">Customize -> Widgets -> Front Page - Phone Section</a>. "
 "<br>Then add the \"<strong>Coni - Service widget</strong>\""
 msgstr ""
 
-#: inc/customizer.php:352
+#: inc/customizer.php:398
 msgid "Phone Color"
 msgstr ""
 
-#: inc/customizer.php:365 inc/customizer.php:375
+#: inc/customizer.php:418 inc/customizer.php:428
 msgid "Tagline"
 msgstr ""
 
-#: inc/customizer.php:366
+#: inc/customizer.php:419
 msgid "Display and link a tagline."
 msgstr ""
 
-#: inc/customizer.php:382
+#: inc/customizer.php:424 template-parts/section-tagline.php:10
+msgid "Start captivating the attention of your client"
+msgstr ""
+
+#: inc/customizer.php:431 template-parts/section-tagline.php:11
+msgid "Cras justo odio, dapibus ac facilisis in, egestas eget quam"
+msgstr ""
+
+#: inc/customizer.php:435
 msgid "Sub-Text"
 msgstr ""
 
-#: inc/customizer.php:389
+#: inc/customizer.php:442
 msgid "Tagline Link"
 msgstr ""
 
-#: inc/customizer.php:402
+#: inc/customizer.php:462
 msgid "Clients"
 msgstr ""
 
-#: inc/customizer.php:403
+#: inc/customizer.php:463
 msgid "Display client's logos."
 msgstr ""
 
-#: inc/customizer.php:412 inc/customizer.php:451
+#: inc/customizer.php:468 template-parts/section-clients.php:6
+msgid "People Who Trust Us"
+msgstr ""
+
+#: inc/customizer.php:472 inc/customizer.php:519 inc/customizer.php:566
 msgid "Section Title"
 msgstr ""
 
-#: inc/customizer.php:418
+#: inc/customizer.php:478
 msgid ""
 "To add services go to: <br><a href=\"#\" data-section=\"sidebar-widgets-"
 "clients-section\">Customize -> Widgets -> Front Page - Clients Section</a>. "
 "<br>Then add the \"<strong>Coni - Client widget</strong>\""
 msgstr ""
 
-#: inc/customizer.php:425
+#: inc/customizer.php:492
 msgid "Map"
 msgstr ""
 
-#: inc/customizer.php:426
+#: inc/customizer.php:493
 msgid "Display a map and your contact information."
 msgstr ""
 
-#: inc/customizer.php:434
+#: inc/customizer.php:501
 #, php-format
 msgid ""
 "Check out the <a href=\"%s\" target=\"_blank\">PRO version</a> to create a "
 "map and contact info."
 msgstr ""
 
-#: inc/customizer.php:441 inc/customizer.php:447
-#: template-parts/section-pricing.php:2
+#: inc/customizer.php:509 inc/customizer.php:515
+#: template-parts/section-pricing.php:6
 msgid "Pricing"
 msgstr ""
 
-#: inc/customizer.php:442
+#: inc/customizer.php:510
 msgid "Display pricing lists."
 msgstr ""
 
-#: inc/customizer.php:457
+#: inc/customizer.php:525
 msgid ""
 "To add a list go to: <br><a href=\"#\" data-section=\"sidebar-widgets-"
 "pricing-section\">Customize -> Widgets -> Front Page - Pricing Section</a>. "
 "<br>Then add the \"<strong>Coni - Pricing widget</strong>\""
 msgstr ""
 
-#: inc/customizer.php:464
+#: inc/customizer.php:539
 msgid "Portfolio"
 msgstr ""
 
-#: inc/customizer.php:465
+#: inc/customizer.php:540
 msgid "Display portfolio items."
 msgstr ""
 
-#: inc/customizer.php:473
+#: inc/customizer.php:548
 #, php-format
 msgid ""
 "Check out the <a href=\"%s\" target=\"_blank\">PRO version</a> to create a "
 "portfolio."
 msgstr ""
 
-#: inc/customizer.php:522
+#: inc/customizer.php:556
+msgid "Blog"
+msgstr ""
+
+#: inc/customizer.php:557
+msgid "Display blog posts."
+msgstr ""
+
+#: inc/customizer.php:562
+msgid "From the blog"
+msgstr ""
+
+#: inc/customizer.php:623
 msgid "View PRO version"
 msgstr ""
 
-#: inc/customizer.php:523
+#: inc/customizer.php:624
 msgid "Documentation"
 msgstr ""
 
@@ -1112,90 +1178,68 @@ msgstr ""
 msgid "Next page"
 msgstr ""
 
-#: template-parts/section-blog.php:2
+#: template-parts/section-blog.php:6
 msgid "From The Blog"
 msgstr ""
 
-#: template-parts/section-blog.php:32
+#: template-parts/section-blog.php:36
 msgid "Read More"
 msgstr ""
 
-#: template-parts/section-clients.php:2
-msgid "People Who Trust Us"
-msgstr ""
-
-#: template-parts/section-pricing.php:15
+#: template-parts/section-pricing.php:19
 msgid "Basic"
 msgstr ""
 
-#: template-parts/section-pricing.php:16 template-parts/section-pricing.php:28
-#: template-parts/section-pricing.php:40
+#: template-parts/section-pricing.php:20 template-parts/section-pricing.php:32
+#: template-parts/section-pricing.php:44
 msgid "$"
 msgstr ""
 
-#: template-parts/section-pricing.php:17
+#: template-parts/section-pricing.php:21
 msgid "15"
 msgstr ""
 
-#: template-parts/section-pricing.php:18 template-parts/section-pricing.php:30
-#: template-parts/section-pricing.php:42
+#: template-parts/section-pricing.php:22 template-parts/section-pricing.php:34
+#: template-parts/section-pricing.php:46
+msgctxt "Month abbreviation"
 msgid "mo"
 msgstr ""
 
-#: template-parts/section-pricing.php:19
+#: template-parts/section-pricing.php:23
 #, php-format
 msgid ""
 "<em>256MB</em> Memory%s<em>1</em> User%s<em>1</em> Website%s<em>1</em> Domain"
 "%s<em>Unlimited</em> Bandwidth%s<em>24/7</em> Support"
 msgstr ""
 
-#: template-parts/section-pricing.php:27
+#: template-parts/section-pricing.php:31
 msgid "Popular"
 msgstr ""
 
-#: template-parts/section-pricing.php:29
+#: template-parts/section-pricing.php:33
 msgid "25"
 msgstr ""
 
-#: template-parts/section-pricing.php:31
+#: template-parts/section-pricing.php:35
 #, php-format
 msgid ""
 "<em>512MB</em> Memory%s<em>3</em> User%s<em>5</em> Website%s<em>7</em> Domain"
 "%s<em>Unlimited</em> Bandwidth%s<em>24/7</em> Support"
 msgstr ""
 
-#: template-parts/section-pricing.php:39
+#: template-parts/section-pricing.php:43
 msgid "Premier"
 msgstr ""
 
-#: template-parts/section-pricing.php:41
+#: template-parts/section-pricing.php:45
 msgid "35"
 msgstr ""
 
-#: template-parts/section-pricing.php:43
+#: template-parts/section-pricing.php:47
 #, php-format
 msgid ""
 "<em>1024MB</em> Memory%s<em>5</em> User%s<em>10</em> Website%s<em>10</em> "
 "Domain%s<em>Unlimited</em> Bandwidth%s<em>24/7</em> Support"
-msgstr ""
-
-#: template-parts/section-tagline.php:6
-msgid "Start captivating the attention of your client"
-msgstr ""
-
-#: template-parts/section-tagline.php:7
-msgid "Cras justo odio, dapibus ac facilisis in, egestas eget quam"
-msgstr ""
-
-#: template-parts/section-testimonials.php:32
-msgid ""
-"\"We are an agency passionate about what we do, providing a great service to "
-"small businesses. Fusce dapibus, tellus ac cursus commodo, tortor mauris "
-"condimentum nibh, ut fermentum massa justo sit amet risus.\""
-msgstr ""
-
-#: template-parts/section-testimonials.php:37
-msgid "John Smith <span>CEO, Coni Inc.</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
