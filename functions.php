@@ -44,13 +44,13 @@ function coni_setup() {
 	
 	if ( function_exists( 'add_image_size' ) ) {
 		//Blog
-		add_image_size( 'post', 953, 536, true );
-		add_image_size( 'blog-section', 457, 259, true );
-		add_image_size( 'post_square', 457, 457, true );
+		add_image_size( 'coni_post', 953, 536, true );
+		add_image_size( 'coni_blog-section', 457, 259, true );
+		add_image_size( 'coni_post_square', 457, 457, true );
 
 		//Portfolio
-		add_image_size( 'portfolio_square', 953, 953, true );
-		add_image_size( 'portfolio_landscape', 953, 476, true );
+		add_image_size( 'coni_portfolio_square', 953, 953, true );
+		add_image_size( 'coni_portfolio_landscape', 953, 476, true );
 	}
 
 	// This theme uses wp_nav_menu() in one location.

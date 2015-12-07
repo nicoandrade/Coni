@@ -7,15 +7,9 @@ if ( $coni_enable_section || is_customize_preview() ) :
         <div class="responsive-wrap">
         	<?php
         	$video_url = esc_url( get_theme_mod( 'coni_video_url', 'https://vimeo.com/137643804' ) );
-			if ( strpos( $video_url, 'vimeo' ) !== false ) {
-			    $video_id = coni_extract_vimeo_id( $video_url );
-			    $video_iframe = '<iframe src="https://player.vimeo.com/video/' . $video_id . '?title=0&byline=0&portrait=0" width="953" height="536" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
-			    echo $video_iframe;
-			}else if( strpos( $video_url, 'youtube' ) !== false || strpos( $video_url, 'youtu' ) !== false){
-				$video_id = coni_extract_youtube_id( $video_url );
-				$video_iframe = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $video_id . '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
-				echo $video_iframe;
-			}
+        	global $wp_embed;
+			$post_embed = $wp_embed->run_shortcode('[embed]' . $video_url . '[/embed]');
+			echo $post_embed;
         	?>
         </div>
         
@@ -41,6 +35,7 @@ if ( $coni_enable_section || is_customize_preview() ) :
         <?php if ( !empty( $coni_video_link_title ) || is_customize_preview() ) { ?>
         <a href="<?php echo esc_url( get_theme_mod( 'coni_video_link_url', '#' ) ); ?>" class="btn-ql alternative"><?php echo esc_html( $coni_video_link_title ); ?></a>
         <?php } ?>
+
         
     </div>     
 </div><!-- video-section -->

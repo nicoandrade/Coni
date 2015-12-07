@@ -30,15 +30,6 @@
 		'after_title'   => '</h4>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Front Page - Team Section', 'coni' ),
-		'id'            => 'team-section',
-		'description'   => esc_html__( 'This is the Team Section in the Front Page. Here Add the "Coni - Team Member widget"', 'coni' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4>',
-		'after_title'   => '</h4>',
-	) );
-	register_sidebar( array(
 		'name'          => esc_html__( 'Front Page - Phone Section', 'coni' ),
 		'id'            => 'phone-section',
 		'description'   => esc_html__( 'This is the Phone Section in the Front Page. Here Add the "Coni - Service widget"', 'coni' ),

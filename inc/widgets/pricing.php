@@ -48,12 +48,15 @@ class coni_Pricing extends WP_Widget{
                     if( !empty( $instance['features'] ) ){
                         $features = $instance['features'];
                         $features = explode( PHP_EOL, $features );
-                    }
-                    $wp_kses_args = array(
-                        'em' => array(),
-                    );
-                    foreach ( $features as $key => $value ) {
-                        echo '<li>' . wp_kses( html_entity_decode( $value ), $wp_kses_args ) . '</li>';
+
+                        $wp_kses_args = array(
+                            'em' => array(),
+                        );
+                        if ( $features ) {
+                            foreach ( $features as $key => $value ) {
+                                echo '<li>' . wp_kses( html_entity_decode( $value ), $wp_kses_args ) . '</li>';
+                            }
+                        }
                     }
                     ?>
                 </ul>

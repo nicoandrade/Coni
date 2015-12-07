@@ -14,7 +14,7 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 		<div class="post-image col-md-6">
             <a href="<?php echo esc_url( get_permalink() ); ?>" class="ql_thumbnail_hover" rel="bookmark">
-                <?php the_post_thumbnail( 'post_square' ); ?>
+                <?php the_post_thumbnail( 'coni_post_square' ); ?>
             </a>
         </div><!-- /post-image -->
         <?php endif; ?>

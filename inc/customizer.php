@@ -44,7 +44,7 @@ function coni_customize_register( $wp_customize ) {
 		'priority' => 80,
 	) );
 	$wp_customize->add_setting( 'coni_probtn_logo', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_text', ) );
-	$wp_customize->add_control( new QL_Display_Text_Control( $wp_customize, 'coni_probtn_logo', array(
+	$wp_customize->add_control( new coni_Display_Text_Control( $wp_customize, 'coni_probtn_logo', array(
 		'section' => 'coni_logo_section', // Required, core or custom.
 		'label' => sprintf( __( 'Check out the <a href="%s" target="_blank">PRO version</a> to use an image logo.', 'coni' ), 'https://www.quemalabs.com/theme/coni-pro/' ),
 	) ) );
@@ -54,7 +54,7 @@ function coni_customize_register( $wp_customize ) {
     Colors
     ===================================================== */
     	$wp_customize->add_setting( 'coni_probtn_colors', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_text', ) );
-		$wp_customize->add_control( new QL_Display_Text_Control( $wp_customize, 'coni_probtn_colors', array(
+		$wp_customize->add_control( new coni_Display_Text_Control( $wp_customize, 'coni_probtn_colors', array(
 			'section' => 'colors', // Required, core or custom.
 			'label' => sprintf( __( 'Check out the <a href="%s" target="_blank">PRO version</a> to change Text, Links and Featured colors.', 'coni' ), 'https://www.quemalabs.com/theme/coni-pro/' ),
 		) ) );
@@ -129,7 +129,7 @@ function coni_customize_register( $wp_customize ) {
 		) );
 
 		$wp_customize->add_setting( 'coni_services_text', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_text', ) );
-		$wp_customize->add_control( new QL_Display_Text_Control( $wp_customize, 'coni_services_text', array(
+		$wp_customize->add_control( new coni_Display_Text_Control( $wp_customize, 'coni_services_text', array(
 			'section' => 'coni_services_section', // Required, core or custom.
 			'label' => __( 'To add services go to: <br><a href="#" data-section="sidebar-widgets-services-section">Customize -> Widgets -> Front Page - Service Section</a>. <br>Then add the "<strong>Coni - Service widget</strong>"', 'coni' ),
 		) ) );
@@ -339,7 +339,7 @@ function coni_customize_register( $wp_customize ) {
 		) );
 
 		$wp_customize->add_setting( 'coni_probtn_team', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_text', ) );
-		$wp_customize->add_control( new QL_Display_Text_Control( $wp_customize, 'coni_probtn_team', array(
+		$wp_customize->add_control( new coni_Display_Text_Control( $wp_customize, 'coni_probtn_team', array(
 			'section' => 'coni_team_section', // Required, core or custom.
 			'label' => sprintf( __( 'Check out the <a href="%s" target="_blank">PRO version</a> to include team members.', 'coni' ), 'https://www.quemalabs.com/theme/coni-pro/' ),
 		) ) );
@@ -367,7 +367,7 @@ function coni_customize_register( $wp_customize ) {
 		) ) );
 
 		$wp_customize->add_setting( 'coni_phone_text', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_text', ) );
-		$wp_customize->add_control( new QL_Display_Text_Control( $wp_customize, 'coni_phone_text', array(
+		$wp_customize->add_control( new coni_Display_Text_Control( $wp_customize, 'coni_phone_text', array(
 			'section' => 'coni_phone_section', // Required, core or custom.
 			'label' => __( 'To add services go to: <br><a href="#" data-section="sidebar-widgets-phone-section">Customize -> Widgets -> Front Page - Phone Section</a>. <br>Then add the "<strong>Coni - Service widget</strong>"', 'coni' ),
 		) ) );
@@ -473,7 +473,7 @@ function coni_customize_register( $wp_customize ) {
 		) );
 
 		$wp_customize->add_setting( 'coni_clients_text', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_text', ) );
-		$wp_customize->add_control( new QL_Display_Text_Control( $wp_customize, 'coni_clients_text', array(
+		$wp_customize->add_control( new coni_Display_Text_Control( $wp_customize, 'coni_clients_text', array(
 			'section' => 'coni_clients_section', // Required, core or custom.
 			'label' => __( 'To add services go to: <br><a href="#" data-section="sidebar-widgets-clients-section">Customize -> Widgets -> Front Page - Clients Section</a>. <br>Then add the "<strong>Coni - Client widget</strong>"', 'coni' ),
 		) ) );
@@ -496,7 +496,7 @@ function coni_customize_register( $wp_customize ) {
 		) );
 
 		$wp_customize->add_setting( 'coni_probtn_map', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_text', ) );
-		$wp_customize->add_control( new QL_Display_Text_Control( $wp_customize, 'coni_probtn_map', array(
+		$wp_customize->add_control( new coni_Display_Text_Control( $wp_customize, 'coni_probtn_map', array(
 			'section' => 'coni_map_section', // Required, core or custom.
 			'label' => sprintf( __( 'Check out the <a href="%s" target="_blank">PRO version</a> to create a map and contact info.', 'coni' ), 'https://www.quemalabs.com/theme/coni-pro/' ),
 		) ) );
@@ -520,7 +520,7 @@ function coni_customize_register( $wp_customize ) {
 		) );
 
 		$wp_customize->add_setting( 'coni_pricing_text', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_text', ) );
-		$wp_customize->add_control( new QL_Display_Text_Control( $wp_customize, 'coni_pricing_text', array(
+		$wp_customize->add_control( new coni_Display_Text_Control( $wp_customize, 'coni_pricing_text', array(
 			'section' => 'coni_pricing_section', // Required, core or custom.
 			'label' => __( 'To add a list go to: <br><a href="#" data-section="sidebar-widgets-pricing-section">Customize -> Widgets -> Front Page - Pricing Section</a>. <br>Then add the "<strong>Coni - Pricing widget</strong>"', 'coni' ),
 		) ) );
@@ -543,7 +543,7 @@ function coni_customize_register( $wp_customize ) {
 		) );
 
 		$wp_customize->add_setting( 'coni_probtn_portfolio', array( 'default' => '', 'sanitize_callback' => 'coni_sanitize_text', ) );
-		$wp_customize->add_control( new QL_Display_Text_Control( $wp_customize, 'coni_probtn_portfolio', array(
+		$wp_customize->add_control( new coni_Display_Text_Control( $wp_customize, 'coni_probtn_portfolio', array(
 			'section' => 'coni_portfolio_section', // Required, core or custom.
 			'label' => sprintf( __( 'Check out the <a href="%s" target="_blank">PRO version</a> to create a portfolio.', 'coni' ), 'https://www.quemalabs.com/theme/coni-pro/' ),
 		) ) );
@@ -774,7 +774,7 @@ if ( ! function_exists( 'coni_pro_btns' ) ){
  * Custom Control to display text
  */
 if ( class_exists( 'WP_Customize_Control' ) ) {
-	class QL_Display_Text_Control extends WP_Customize_Control {
+	class coni_Display_Text_Control extends WP_Customize_Control {
 		/**
 		* Render the control's content.
 		*/

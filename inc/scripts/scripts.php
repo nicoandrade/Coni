@@ -2,6 +2,10 @@
 
 	wp_enqueue_script( 'jquery' );
 	
+	//HTML5 Shiv ==============================================
+	wp_enqueue_script('html5shiv', get_template_directory_uri() . '/js/html5shiv.js', array(), '3.7.3', true );
+	//=================================================================
+
 	//hoverIntent Plugin ==============================================
 	wp_enqueue_script('hoverIntent', get_template_directory_uri() . '/js/jquery.hoverIntent.js', array('jquery'), '6.0', true );
 	//=================================================================

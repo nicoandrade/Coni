@@ -25,7 +25,7 @@ if ( $coni_enable_section || is_customize_preview() ) :
                 <?php if ( has_post_thumbnail() ) { ?>
 				<div class="blog-item-image">
 					<a href="<?php echo esc_url( get_permalink() ) ?>" class="ql_thumbnail_hover" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-						<?php the_post_thumbnail( 'blog-section' ); ?>
+						<?php the_post_thumbnail( 'coni_blog-section' ); ?>
 					</a>
 				</div><!-- /post_image -->
 				<?php } ?>

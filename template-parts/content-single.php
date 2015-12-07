@@ -17,7 +17,7 @@
 
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="post-image">
-                <?php the_post_thumbnail( 'post' ); ?>
+                <?php the_post_thumbnail( 'coni_post' ); ?>
         </div><!-- /post-image -->
     <?php endif; ?>
 
