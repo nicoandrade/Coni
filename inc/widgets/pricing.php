@@ -36,9 +36,9 @@ class coni_Pricing extends WP_Widget{
                 <h2><?php if( !empty( $instance['title'] ) ): echo esc_html( $instance['title'] ); endif; ?></h2>
 
                 <div class="cd-price">
-                    <span class="cd-currency"><?php if( !empty( $instance['currency'] ) ): echo esc_html( $instance['currency'] ); else: echo '$'; endif; ?></span>
-                    <span class="cd-value"><?php if( !empty( $instance['price'] ) ): echo esc_html( $instance['price'] ); endif; ?></span>
-                    <span class="cd-duration"><?php if( !empty( $instance['duration'] ) ): echo esc_html( $instance['duration'] ); endif; ?></span>
+                    <?php if( !empty( $instance['currency'] ) ): ?><span class="cd-currency"><?php echo esc_html( $instance['currency'] ); ?></span><?php endif; ?>
+                    <?php if( !empty( $instance['price'] ) ): ?><span class="cd-value"><?php  echo esc_html( $instance['price'] ); ?></span><?php endif; ?>
+                    <?php if( !empty( $instance['duration'] ) ): ?><span class="cd-duration"><?php echo esc_html( $instance['duration'] ); ?></span><?php endif; ?>
                 </div>
             </header> <!-- .cd-pricing-header -->
 
