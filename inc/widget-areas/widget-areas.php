@@ -42,7 +42,7 @@
 		'name'          => esc_html__( 'Front Page - Clients Section', 'coni' ),
 		'id'            => 'clients-section',
 		'description'   => esc_html__( 'This is the Clients Section in the Front Page. Here Add the "Coni - Client widget"', 'coni' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s clients-logo wow flipInX">',
+		'before_widget' => '<div class="widget %s clients-logo wow flipInX">',
 		'after_widget'  => '</div>',
 		'before_title'  => '',
 		'after_title'   => '',

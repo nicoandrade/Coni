@@ -10,7 +10,7 @@
  */
 
 ?>
-<?php if ( !is_front_page() ) : ?>
+<?php if ( get_option( 'show_on_front' ) == 'posts' || !is_front_page() ) : ?>
         <div class="clearfix"></div>
     </div><!-- /row -->
             

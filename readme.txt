@@ -19,6 +19,9 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 
 = Documentation =
 
+* Set the Front Page
+By default the themes shows your latest blog posts. To set the front page you see on the demo site, you have to create an ampty page called "Home" or similar and then go to your Admin Panel > Settings > Reading, there select the option "A static page (select below)" and in the dropdown menu select your new "Home" page, click save and that's it.
+
 * Social Menu
 Using the social nav menu is just like using any other nav menu in WordPress. You just need to add custom links pointing to your social media profiles.
 
@@ -68,6 +71,15 @@ Bootstrap Created by @mdo and @fat.
 Code licensed under MIT
 Source: http://getbootstrap.com
 
+WOW by @MATTAUSSAGUEL
+Code licensed under MIT
+Source: http://mynameismatthieu.com/WOW/
+
+Flickity by @metafizzyco
+Code licensed under GPLv3
+Source: http://flickity.metafizzy.co
+License: http://flickity.metafizzy.co/license.html
+
 Modernizr 2.8.3 (Custom Build) | MIT & BSD
 Source: http://modernizr.com
 
@@ -86,11 +98,11 @@ Source: http://cherne.net/brian/resources/jquery.hoverIntent.html
 [Lato Font](https://www.google.com/fonts/specimen/Lato) by Łukasz Dziedzic - Licensed under the [SIL Open Font License, 1.1](http://scripts.sil.org/OFL).
 
 Images from Unsplash
+https://unsplash.com/photos/iS-X-9GPiS0
+https://unsplash.com/photos/iOPsLuogRao
+https://unsplash.com/photos/HgPAUR1ALJQ
+https://unsplash.com/photos/RbbdzZBKRDY
+https://unsplash.com/photos/Dd_7xDCuuUo
+https://unsplash.com/photos/xNZHQn6lyLk
 License: https://unsplash.com/license
 Source: https://unsplash.com
-
-Valley Dark UI Kit Freebie Image from uiFest
-Source: https://dribbble.com/shots/2322201-Valley-Dark-UI-Kit-Freebie
-
-FREEBIE: Badge Mockup by AlienValley
-Source: https://dribbble.com/shots/2284236-FREEBIE-Badge-Mockup

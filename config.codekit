@@ -266,61 +266,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/person1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 91386,
-		"inputAbbreviatedPath": "\/images\/person1.jpg",
-		"outputAbbreviatedPath": "\/images\/person1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/person2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 164385,
-		"inputAbbreviatedPath": "\/images\/person2.jpg",
-		"outputAbbreviatedPath": "\/images\/person2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/person3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 125163,
-		"inputAbbreviatedPath": "\/images\/person3.jpg",
-		"outputAbbreviatedPath": "\/images\/person3.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/person4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 88794,
-		"inputAbbreviatedPath": "\/images\/person4.jpg",
-		"outputAbbreviatedPath": "\/images\/person4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/person5.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 128037,
-		"inputAbbreviatedPath": "\/images\/person5.jpg",
-		"outputAbbreviatedPath": "\/images\/person5.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/phone-screen.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -372,50 +317,6 @@
 		"initialSize": 1761,
 		"inputAbbreviatedPath": "\/images\/phone-service-4.png",
 		"outputAbbreviatedPath": "\/images\/phone-service-4.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/portfolio1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 242995,
-		"inputAbbreviatedPath": "\/images\/portfolio1.jpg",
-		"outputAbbreviatedPath": "\/images\/portfolio1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/portfolio2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 282733,
-		"inputAbbreviatedPath": "\/images\/portfolio2.jpg",
-		"outputAbbreviatedPath": "\/images\/portfolio2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/portfolio3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 150747,
-		"inputAbbreviatedPath": "\/images\/portfolio3.jpg",
-		"outputAbbreviatedPath": "\/images\/portfolio3.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/portfolio4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 357112,
-		"inputAbbreviatedPath": "\/images\/portfolio4.jpg",
-		"outputAbbreviatedPath": "\/images\/portfolio4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2506,15 +2407,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/page-fullwidth.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/page-fullwidth.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/page.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2599,6 +2491,15 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/template-fullwidth.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template-fullwidth.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/template-parts\/content-none.php": {
 		"fileType": 8192,

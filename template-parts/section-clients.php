@@ -17,31 +17,31 @@ if ( $coni_enable_section || is_customize_preview() ) :
                 'title' => 'WordPress',
                 'image_uri' => get_stylesheet_directory_uri() . '/images/WP.png', 
                 );
-            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div id="%1$s" class="widget %2$s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
+            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div class="widget %s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
 
             $widget_instance = array(
                 'title' => 'WooCommerce',
                 'image_uri' => get_stylesheet_directory_uri() . '/images/Woo.png', 
                 );
-            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div id="%1$s" class="widget %2$s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
+            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div class="widget %s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
 
             $widget_instance = array(
                 'title' => 'Dribbble',
                 'image_uri' => get_stylesheet_directory_uri() . '/images/dribbble.png', 
                 );
-            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div id="%1$s" class="widget %2$s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
+            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div class="widget %s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
 
             $widget_instance = array(
                 'title' => 'WPML',
                 'image_uri' => get_stylesheet_directory_uri() . '/images/wpml.png', 
                 );
-            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div id="%1$s" class="widget %2$s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
+            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div class="widget %s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
 
             $widget_instance = array(
                 'title' => 'jQuery',
                 'image_uri' => get_stylesheet_directory_uri() . '/images/jquery.png', 
                 );
-            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div id="%1$s" class="widget %2$s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
+            the_widget( 'coni_Client', $widget_instance, array( 'before_widget' => '<div class="widget %s clients-logo wow flipInX">', 'after_widget' => '</div>' ) );
 
         }
         ?>
