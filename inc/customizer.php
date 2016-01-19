@@ -372,14 +372,14 @@ function coni_customize_register( $wp_customize ) {
 			'label' => __( 'To add services go to: <br><a href="#" data-section="sidebar-widgets-phone-section">Customize -> Widgets -> Front Page - Phone Section</a>. <br>Then add the "<strong>Coni - Service widget</strong>"', 'coni' ),
 		) ) );
 
-		$wp_customize->add_setting( 'coni_phone_link_title', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
+		$wp_customize->add_setting( 'coni_phone_link_title', array( 'default' => esc_html__( 'Learn More', 'coni' ), 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_text', ) );
 		$wp_customize->add_control( 'coni_phone_link_title', array(
 			'type' => 'text',
 			'section' => 'coni_phone_section', // Required, core or custom.
 			'label' => esc_attr__( "Link Title", 'coni' ),
 		) );
 
-		$wp_customize->add_setting( 'coni_phone_link_url', array( 'default' => '', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_url', ) );
+		$wp_customize->add_setting( 'coni_phone_link_url', array( 'default' => '#', 'transport' => 'postMessage', 'sanitize_callback' => 'coni_sanitize_url', ) );
 		$wp_customize->add_control( 'coni_phone_link_url', array(
 			'type' => 'url',
 			'section' => 'coni_phone_section', // Required, core or custom.

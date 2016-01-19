@@ -31,28 +31,28 @@ if ( $coni_enable_section || is_customize_preview() ) :
 				'text' => 'Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.',
 				'image_uri' => get_stylesheet_directory_uri() . '/images/heart.png', 
 				);
-			the_widget( 'coni_Service', $widget_args );
+			the_widget( 'coni_Service', $widget_args, array( 'before_widget' => '', 'after_widget' => '' ) );
 
 			$widget_args = array(
 				'title' => 'Grow Faster',
 				'text' => 'Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.',
 				'image_uri' => get_stylesheet_directory_uri() . '/images/gauge.png', 
 				);
-			the_widget( 'coni_Service', $widget_args );
+			the_widget( 'coni_Service', $widget_args, array( 'before_widget' => '', 'after_widget' => '' ) );
 
 			$widget_args = array(
 				'title' => 'Lunch Your Site',
 				'text' => 'Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.',
 				'image_uri' => get_stylesheet_directory_uri() . '/images/target.png', 
 				);
-			the_widget( 'coni_Service', $widget_args );
+			the_widget( 'coni_Service', $widget_args, array( 'before_widget' => '', 'after_widget' => '' ) );
 
 			$widget_args = array(
 				'title' => 'Multiple Lenguages',
 				'text' => 'Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.',
 				'image_uri' => get_stylesheet_directory_uri() . '/images/quill-ink.png', 
 				);
-			the_widget( 'coni_Service', $widget_args );
+			the_widget( 'coni_Service', $widget_args, array( 'before_widget' => '', 'after_widget' => '' ) );
 
 		}
 		?>

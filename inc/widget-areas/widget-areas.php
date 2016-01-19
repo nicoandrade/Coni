@@ -33,8 +33,8 @@
 		'name'          => esc_html__( 'Front Page - Phone Section', 'coni' ),
 		'id'            => 'phone-section',
 		'description'   => esc_html__( 'This is the Phone Section in the Front Page. Here Add the "Coni - Service widget"', 'coni' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
+		'before_widget' => '',
+		'after_widget'  => '',
 		'before_title'  => '<h4>',
 		'after_title'   => '</h4>',
 	) );
